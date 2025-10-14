@@ -1,0 +1,32 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - db
+
+  ai:
+    build: ./ai-chatbot
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    volumes:
+      - ./ai-chatbot:/app
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: scholarmatch
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
