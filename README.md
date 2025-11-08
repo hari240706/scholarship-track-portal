@@ -1,7 +1,7 @@
 # Scholarship Track Portal
 
 Overview
-Sairam Scholarship Track Portal is a web-based application designed to simplify scholarship management for students and administrators. The portal enables students to apply for scholarships and track application statuses, while administrators can manage applications, verify eligibility, and streamline the scholarship workflow.
+Scholarship Track Portal is a web-based application designed to simplify scholarship management for students and administrators. The portal enables students to apply for scholarships and track application statuses, while administrators can manage applications, verify eligibility, and streamline the scholarship workflow.
 
 Features
 Student registration and profile management
